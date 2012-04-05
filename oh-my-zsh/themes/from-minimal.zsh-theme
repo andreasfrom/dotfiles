@@ -1,0 +1,1 @@
+PROMPT='%{$fg_bold[blue]%}${PWD/#$HOME/~} %#%{$reset_color%} '
