@@ -83,9 +83,9 @@ set autoindent
 set undofile
 set backup
 set noswapfile
-set backupdir=~/.vim/tmp/backup/
-set undodir=~/.vim/tmp/undo/
-set dir=~/.vim/tmp/swap/
+set backupdir=~/.vimbackup/
+set undodir=~/.vimbackup/
+set dir=~/.vimbackup/
 set history=1000
 set undoreload=10000
 " }
