@@ -48,7 +48,7 @@ set cursorline
 set visualbell
 set ruler
 set laststatus=2
-set statusline=%F\ %m%r%w%y\ %=(%L\ loc)\ %l,%v\ \ %P
+"set statusline=%F\ %m%r%w%y\ %=(%L\ loc)\ %l,%v\ \ %P
 set relativenumber
 set gcr=a:blinkon0
 set bg=dark
@@ -87,6 +87,10 @@ set undodir=~/.vimbackup/
 set dir=~/.vimbackup/
 set history=1000
 set undoreload=10000
+" }
+
+" Supertab {
+"let g:SuperTabDefaultCompletionType = "context"
 " }
 
 " Improved searching {
