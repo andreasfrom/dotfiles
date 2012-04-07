@@ -4,7 +4,7 @@ Dotfiles
 Introduction
 ------------
 
-These are the dotfiles I use on Linux for following programs:
+These are the dotfiles I use on Linux for the following programs:
 
 * [Vim](http://www.vim.org)
 * [Zsh](http://www.zsh.org) with [Oh-my-Zsh](http://www.github.com/robbyrussell/oh-my-zsh)
@@ -14,12 +14,13 @@ These are the dotfiles I use on Linux for following programs:
 Files
 -----
 
-# Vim
+### Vim
 
 I use SuperTab, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter}
 and other great plugins. They are kept as plain directories in my bundle folder
-(hurray for Tim Pope's Pathogen!) and not git submodules as I am a git newbie.
-This makes it easier for me.
+(hurray for Tim Pope's [Pathogen](http://www.github.com/tpope/vim-pathogen)!) and not git submodules as I am a git newbie.
+This makes it easier for me. My colorscheme is currently Wombat for gVim and
+Wombat256mod for the command line.
 
 ### Zsh
 
@@ -35,8 +36,8 @@ moment I'm using Vim though.
 ### Pentadactyl
 
 This is a Firefox extension which makes controlling Firefox with the keyboard
-only possible. It uses Vim style modal commands and is deeply recommended to
-try out. The rc file consists of some bindings and appearence changes as well
+easier. It uses Vim style modal commands and is very nice.
+The rc file consists of some bindings and appearence changes as well
 as "set defsearch=duckduckgo" which makes DuckDuckGo the default search engine.
 
 Management
