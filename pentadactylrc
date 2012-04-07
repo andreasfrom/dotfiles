@@ -17,21 +17,6 @@ set showstatuslinks=command
 set mapleader=','
 set defsearch=duckduckgo
 
-" FASTER PLEASE
-nnoremap j 3j
-nnoremap k 3k
-
-" Go to the second input field.
-" Useful for skipping over search fields, etc.
-nnoremap gI 2gi
-
-" I never use marks, but always use quickmarks.
-nnoremap "'" go
-nnoremap '"' gn
-
-" Switch tabs with parens
-nnoremap ) :tn<CR>
-nnoremap ( :tp<CR>
 
 " Finally I can overwrite the stupid fucking Firebug toggling correctly.
 " nnoremap <c-f> <f12>
@@ -44,9 +29,6 @@ inoremap <c-g> <esc><m-a-k><esc>
 " Inspect element toggle
 nnoremap <c-f> <m-a-i>
 inoremap <c-f> <esc><m-a-i>
-
-" Shift is hard.
-nnoremap ; :
 
 " YES YES YES REMOVE THE IDIOCY
 nnoremap <bs> <nop>

@@ -19,8 +19,8 @@ Files
 I use SuperTab, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter}
 and other great plugins. They are kept as plain directories in my bundle folder
 (hurray for Tim Pope's [Pathogen](http://www.github.com/tpope/vim-pathogen)!) and not git submodules as I am a git newbie.
-This makes it easier for me. My colorscheme is currently Wombat for gVim and
-Wombat256mod for the command line.
+This makes it easier for me. My colorscheme is currently
+[Badwolf](http://www.bitbucket.org/sjl/badwolf) by Steve Losh.
 
 ### Zsh
 

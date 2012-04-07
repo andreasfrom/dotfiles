@@ -51,23 +51,13 @@ set laststatus=2
 set relativenumber
 set gcr=a:blinkon0
 set bg=dark
+colorscheme badwolf
 if has('gui_running')
-  try
-    colorscheme wombat
-  catch \E185:\
-    colorscheme default
-    set bg=light
-  endtry
   set guioptions-=m
   set guioptions-=T
   set guioptions-=r
 else
-  try
-    colorscheme wombat256mod
-  catch \E185:\
-    colorscheme default
-  endtry
-  set ttyfast
+ set ttyfast
 endif
 " }
 
