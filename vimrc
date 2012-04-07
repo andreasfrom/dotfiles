@@ -7,6 +7,7 @@ set nocompatible
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+filetype plugin on
 filetype plugin indent on
 " }
 
@@ -91,7 +92,7 @@ set undoreload=10000
 " }
 
 " Supertab {
-"let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabLongestHighlight=1
 " }
 
 " Improved searching {
