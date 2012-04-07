@@ -37,7 +37,6 @@ autocmd BufReadPost *
     \ endif
 
 au FocusLost * :wa
-au VimResized * :wincmd =
 " }
 
 "  Appearance {
