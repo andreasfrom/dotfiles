@@ -14,11 +14,12 @@ These are the dotfiles I use on Linux for following programs:
 Files
 -----
 
-## Vim
+# Vim
 
 I use SuperTab, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter}
 and other great plugins. They are kept as plain directories in my bundle folder
 (hurray for Tim Pope's Pathogen!) and not git submodules as I am a git newbie.
+This makes it easier for me.
 
 ### Zsh
 
@@ -41,15 +42,14 @@ as "set defsearch=duckduckgo" which makes DuckDuckGo the default search engine.
 Management
 ----------
 
-For managing the whole thing I use a simply Ruby-script which symlinks files
+For managing the whole thing I use a simple Ruby-script which symlinks files
 from my dotfiles dir to my home folder. The original script is from
-errtheblog.com but I've changed it slightly to move existing files to
-$file.old.
+[errtheblog](http://errtheblog.com/posts/89-huba-huba) but I've changed it slightly to move existing files to
+$file.old instead of just skipping them.
 
 Thanks
 ------
-I want to thank Alexis Sellier (cloudhead) and Steve Losh for inspiration and
-snippets for my Vim setup aswell as my Zsh setup. Steve Losh for making it
-possible to 'steal' his .pentadactylrc.
+I want to thank Alexis Sellier ([cloudhead](http://www.cloudhead.com)) and [Steve Losh](http://www.stevelosh.com) for inspiration and snippets for my Vim setup aswell as my Zsh setup.
+Steve Losh for making it possible to 'steal' his .pentadactylrc.
 
-Steve Yegge and MasteringEmacs.org has helped greatly with my Emacs setup.
+[Steve Yegge](http://steve-yegge.blogspot.com) and [MasteringEmacs.org](http://masteringemacs.org) has helped me greatly with my Emacs setup.
