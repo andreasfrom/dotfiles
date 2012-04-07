@@ -14,7 +14,7 @@ These are the dotfiles I use on Linux for following programs:
 Files
 -----
 
-### Vim
+# Vim
 
 I use SuperTab, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter}
 and other great plugins. They are kept as plain directories in my bundle folder
