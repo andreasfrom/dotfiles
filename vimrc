@@ -91,6 +91,7 @@ set undoreload=10000
 " }
 
 " Supertab {
+let g:SuperTabDefaultCompletionType="<c-n>"
 let g:SuperTabLongestHighlight=1
 " }
 
