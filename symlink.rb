@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 home = File.expand_path('~')
-# BACKUP_DIRS = Array.new(".vimbackup", ".emacsbackup")
-# a.each { |x| Dir.mkdir(x) }
+BACKUP_DIRS = Array['.vimbackup', '.emacsbackup']
+BACKUP_DIRS.each { |x| Dir.mkdir(File.join(home, x)) }
 
 Dir['*'].each do |file|
   next if file =~ /install/
