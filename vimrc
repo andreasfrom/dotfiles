@@ -38,6 +38,20 @@ autocmd BufReadPost *
 
 au FocusLost * :silent! wall
 au VimResized * :wincmd =
+
+"" Spellchecking {
+autocmd BufRead *
+      \ set nospell |
+      \ if match(@%, "Dansk") >= 0 |
+      \   set spell |
+      \   set spelllang=da |
+      \ endif |
+      \ if match(@%, "English") >= 0 |
+      \   set spell |
+      \   set spelllang=en |
+      \ endif |
+
+""}
 " }
 
 "  Appearance {
