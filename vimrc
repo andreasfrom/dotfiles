@@ -31,27 +31,28 @@ let g:Tex_DefaultTargetFormat="pdf"
 " }
 
 " Autocommands {
-autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
+if has('autocmd')
+  au FocusLost * :silent! wall
+  au VimResized * :wincmd =
 
-au FocusLost * :silent! wall
-au VimResized * :wincmd =
+  autocmd BufReadPost *
+        \ if line("'\"") > 1 && line("'\"") <= line("$") |
+        \   exe "normal! g`\"" |
+        \ endif
 
-"" Spellchecking {
-autocmd BufRead *
-      \ set nospell |
-      \ if match(@%, "Dansk") >= 0 |
-      \   set spell |
-      \   set spelllang=da |
-      \ endif |
-      \ if match(@%, "English") >= 0 |
-      \   set spell |
-      \   set spelllang=en |
-      \ endif |
-
-""}
+  "" Spellchecking {
+  autocmd BufRead *
+        \ set nospell |
+        \ if match(@%, "Dansk") >= 0 |
+        \   set spell |
+        \   set spelllang=da |
+        \ endif |
+        \ if match(@%, "English") >= 0 |
+        \   set spell |
+        \   set spelllang=en |
+        \ endif |
+  ""}
+endif
 " }
 
 "  Appearance {
