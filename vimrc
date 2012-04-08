@@ -34,6 +34,7 @@ let g:Tex_DefaultTargetFormat="pdf"
 if has('autocmd')
   au FocusLost * :silent! wall
   au VimResized * :wincmd =
+  autocmd BufReadPost * set formatoptions-=cro |
 
   autocmd BufReadPost *
         \ if line("'\"") > 1 && line("'\"") <= line("$") |
@@ -73,7 +74,7 @@ if has('gui_running')
   set guioptions-=T
   set guioptions-=r
 else
- set ttyfast
+  set ttyfast
 endif
 " }
 
@@ -82,6 +83,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set autoindent
 " }
 
 " Backup files and settings {
@@ -117,7 +119,6 @@ vnoremap <tab> %
 " Handle long lines {
 set wrap
 set textwidth=79
-set formatoptions=qrn1
 set colorcolumn=85
 " }
 
