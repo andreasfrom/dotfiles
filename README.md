@@ -16,7 +16,7 @@ Files
 
 ### Vim
 
-I use SuperTab, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter}
+I use SuperTab, SnipMate, Fugitive, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter}
 and other great plugins. They are kept as plain directories in my bundle folder
 (hurray for Tim Pope's [Pathogen](http://www.github.com/tpope/vim-pathogen)!) and not git submodules as I am a git newbie.
 This makes it easier for me. My colorscheme is currently
