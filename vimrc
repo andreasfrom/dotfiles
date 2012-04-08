@@ -36,7 +36,8 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
-au FocusLost * :wa
+au FocusLost * :silent! wall
+au VimResized * :wincmd =
 " }
 
 "  Appearance {
@@ -66,7 +67,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set autoindent
 " }
 
 " Backup files and settings {
