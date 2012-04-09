@@ -20,7 +20,7 @@ I use SuperTab, SnipMate, Fugitive, Syntastic, EasyMotion, CtrlP, Powerline, NER
 and other great plugins. They are all organized in my bundle folder
 (hurray for Tim Pope's [Pathogen](http://www.github.com/tpope/vim-pathogen)!) as git submodules. This means that to get a fully updated version all that's necessary is the following steps:
 ```
-    git clone https://github.com/AndreasFrom/dotfiles
+    git clone https://github.com/AndreasFrom/dotfiles <br>
     cd dotfiles
     git submodule init
     git submodule update
