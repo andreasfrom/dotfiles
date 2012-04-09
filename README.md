@@ -16,11 +16,15 @@ Files
 
 ### Vim
 
-I use SuperTab, SnipMate, Fugitive, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter}
-and other great plugins. They are kept as plain directories in my bundle folder
-(hurray for Tim Pope's [Pathogen](http://www.github.com/tpope/vim-pathogen)!) and not git submodules as I am a git newbie.
-This makes it easier for me. My colorscheme is currently
-[Badwolf](http://www.bitbucket.org/sjl/badwolf) by Steve Losh.
+I use SuperTab, SnipMate, Fugitive, Syntastic, EasyMotion, CtrlP, Powerline, NERD{Tree,Commenter} and Badwolf as colorscheme.
+and other great plugins. They are all organized in my bundle folder
+(hurray for Tim Pope's [Pathogen](http://www.github.com/tpope/vim-pathogen)!) as git submodules. This means that to get a fully updated version all that's necessary is the following steps:
+    git clone https://github.com/AndreasFrom/dotfiles
+    cd dotfiles
+    git submodule init
+    git submodule update
+    (./symlink.rb)
+and you're done :)
 
 ### Zsh
 
