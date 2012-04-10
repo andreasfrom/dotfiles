@@ -1,16 +1,19 @@
 #!/usr/bin/env ruby
 
-home = File.expand_path('~')
+HOME = File.expand_path('~')
 BACKUP_DIRS = Array['.vimbackup', '.emacsbackup']
-BACKUP_DIRS.each { |x| Dir.mkdir(File.join(home, x)) }
+BACKUP_DIRS.each { |x|
+  unless File.exists?(File.join(HOME,x))
+    Dir.mkdir(File.join(HOME, x))
+  end
+} 
 
 Dir['*'].each do |file|
-  next if file =~ /install/
-  target = File.join(home, ".#{file}")
-  `mv #{target} #{target}.old` if File.exists?(target)
-  `ln -s #{File.expand_path file} #{target}`
+  target = File.join(HOME, ".#{file}")
+  File.rename(target,target+".old") if File.exists?(target)
+  File.symlink(File.expand_path(file), target)
 end
 
 # git push on commit
-`echo 'git push' > .git/hooks/post-commit`
-`chmod 755 .git/hooks/post-commit`
+File.open(".git/hooks/post-commit", 'a') {|f| f.write("git push\n")}
+File.chmod(0755, ".git/hooks/post-commit")

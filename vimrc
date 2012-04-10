@@ -22,6 +22,7 @@ set completeopt=menu,menuone,longest
 set modelines=0
 set mouse-=a
 let g:ackprg="ack -H --nocolor --nogroup --column"
+let g:ctrlp_working_path_mode=0
 
 "" Vim-Latex {
 set grepprg=grep\ -nH\ $*
