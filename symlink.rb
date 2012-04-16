@@ -4,7 +4,6 @@ HOME = File.expand_path('~')
 BACKUP_DIRS = Array['.vimbackup', '.emacsbackup']
 BACKUP_DIRS.each do |x|
   unless File.exists?(File.join(HOME,x))
-  do
     Dir.mkdir(File.join(HOME, x))
   end
 end
