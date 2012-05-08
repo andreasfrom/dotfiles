@@ -1,6 +1,6 @@
 # Zsh
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="from-minimal"
+ZSH_THEME="robbyrussell"
 
 # Settings
 REPORTTIME=10
