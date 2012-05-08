@@ -16,3 +16,4 @@ export EDITOR=`which vim`
 
 # source ZSH
 source $ZSH/oh-my-zsh.sh
+ 
