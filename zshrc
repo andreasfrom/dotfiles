@@ -14,5 +14,5 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bi
 export TERM=xterm-256color
 export EDITOR=`which vim`
 
-# source ZSH
+# Source ZSH
 source $ZSH/oh-my-zsh.sh
