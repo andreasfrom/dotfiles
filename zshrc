@@ -4,7 +4,6 @@ ZSH_THEME="robbyrussell"
 
 # Settings
 REPORTTIME=10
-set DISABLE_UPDATE_PROMPT = true
 
 # Plugins
 plugins=(git)
