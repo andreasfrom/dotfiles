@@ -8,8 +8,6 @@ These are the dotfiles I use on Linux for the following programs:
 
 * [Vim](http://www.vim.org)
 * [Zsh](http://www.zsh.org) with [Oh-my-Zsh](http://www.github.com/robbyrussell/oh-my-zsh)
-* [Emacs](http://www.gnu.org/emacs)
-* [Pentadactyl](http://dactyl.sourceforge.net/pentadactyl)
 
 Files
 -----
@@ -24,7 +22,7 @@ and other great plugins. They are all organized in my bundle folder
     cd dotfiles
     git submodule init
     git submodule update
-    (./symlink.rb)
+    (ruby symlink.rb)
     
 and you're done :)
 
@@ -32,19 +30,6 @@ and you're done :)
 
 Zsh is great and you should try it out, especially the autocorrect and globbing
 features are awesome. With Oh-my-Zsh you also get excellent plugins and themes.
-I've made my own theme called From-minimal.
-
-### Emacs
-
-Emacs is a great editor and I tend to switch between Vim and Emacs. At the
-moment I'm using Vim though.
-
-### Pentadactyl
-
-This is a Firefox extension which makes controlling Firefox with the keyboard
-easier. It uses Vim style modal commands and is very nice.
-The rc file consists of some bindings and appearence changes as well
-as "set defsearch=duckduckgo" which makes DuckDuckGo the default search engine.
 
 Management
 ----------
@@ -57,6 +42,3 @@ $file.old instead of just skipping them.
 Thanks
 ------
 I want to thank Alexis Sellier ([cloudhead](http://www.cloudhead.com)) and [Steve Losh](http://www.stevelosh.com) for inspiration and snippets for my Vim setup aswell as my Zsh setup.
-Steve Losh for making it possible to 'steal' his .pentadactylrc.
-
-[Steve Yegge](http://steve-yegge.blogspot.com) and [MasteringEmacs.org](http://masteringemacs.org) has helped me greatly with my Emacs setup.

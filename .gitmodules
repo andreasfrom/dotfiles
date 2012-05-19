@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vimclojure"]
 	path = vim/bundle/vimclojure
 	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "emacs.d/themes"]
+	path = emacs.d/themes
+	url = https://github.com/sellout/emacs-color-theme-solarized.git
