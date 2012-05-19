@@ -8,11 +8,9 @@
 (prefer-coding-system 'utf-8)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq default-directory "~/")
+(setq vc-follow-symlinks t)
 
 ;; appearence
-;(require 'color-theme)
-;(require 'color-theme-solarized)
-(color-theme-solarized-dark)
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (setq inhibit-startup-message t
