@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 HOME = File.expand_path('~')
-BACKUP_DIRS = Array['.vimbackup', '.emacsbackup']
+BACKUP_DIRS = Array['.vimbackup']
 BACKUP_DIRS.each do |x|
   unless File.exists?(File.join(HOME,x))
     Dir.mkdir(File.join(HOME, x))
