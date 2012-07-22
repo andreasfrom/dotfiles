@@ -66,7 +66,7 @@ set cursorline
 set visualbell
 set ruler
 set laststatus=2
-set relativenumber
+set number
 set gcr=a:blinkon0
 set bg=dark
 colorscheme badwolf
@@ -80,9 +80,9 @@ endif
 " }
 
 " Indentation {
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 " }
