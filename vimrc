@@ -71,9 +71,7 @@ set gcr=a:blinkon0
 set bg=dark
 colorscheme badwolf
 if has('gui_running')
-  set guioptions-=m
-  set guioptions-=T
-  set guioptions-=r
+  set guioptions-=mTrL
 else
   set ttyfast
 endif
