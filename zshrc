@@ -6,7 +6,7 @@ ZSH_THEME="norm"
 REPORTTIME=10
 
 # Plugins
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 # Exports
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl:/home/andreas/bin/
