@@ -1,0 +1,22 @@
+#!/bin/zsh
+
+muted=$(pamixer --get-mute)
+
+if (${muted}); then
+    color="#66d9ef" # blue
+    volume="---"
+else
+    volume="$(pamixer --get-volume)"
+    if [[ ${volume} -gt 50 ]]; then
+        if [[ ${volume} -gt 75 ]]; then
+            color="#cc0000" # red
+        else
+            color="#66d9ef" # blue
+        fi
+    else
+        color="#73d216" # green
+    fi
+    volume="${volume}%"
+fi
+
+echo "${prefix}<fc=${color}>${volume}</fc>"

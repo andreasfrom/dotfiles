@@ -1,0 +1,13 @@
+! Two bindings are taking place here:
+! 1. Caps Lock (66) is mapped to Control_L
+! 2. Menu/kbd-right-click (135) is mapped to Windows/Hyper_R
+
+clear control
+clear lock
+clear mod4
+
+keycode 66  = Control_L
+keycode 135 = Hyper_R
+
+add control = Control_L Control_R
+add mod4    = Super_L   Hyper_R

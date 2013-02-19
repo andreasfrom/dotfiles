@@ -1,0 +1,5 @@
+[user]
+	name = Andreas From
+	email = andro.from@gmail.com
+[credential]
+	helper = cache
