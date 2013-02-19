@@ -8,7 +8,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks (avoidStruts)
 
 -- Config
-myTerminal = "urxvt"
+myTerminal = "urxvtc"
 myBar = "xmobar"
 myPP = xmobarPP
        { ppCurrent = xmobarColor "#89bdff" "" . wrap "[" "]"

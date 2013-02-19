@@ -66,3 +66,6 @@ URxvt*font: xft:Dejavu Sans Mono:size=10
 
 ! emacs
 emacs.font: DejavuSansMono-10
+
+! dmenu
+dmenu.font: DejavuSansMono-8
