@@ -3,7 +3,6 @@ import XMonad
 import XMonad.Util.EZConfig (additionalKeysP)
 import XMonad.Actions.CycleWS (toggleWS)
 import XMonad.Layout.NoBorders (smartBorders)
-import XMonad.Layout.Spacing (smartSpacing)
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks (avoidStruts)
 
@@ -19,10 +18,11 @@ toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 myConfig = defaultConfig
            { terminal     = myTerminal
+           , clickJustFocuses = False
            , modMask      = mod4Mask
            , borderWidth  = 1
            , focusedBorderColor = "cc0000"
-           , layoutHook   = smartBorders $ smartSpacing 2 $ avoidStruts (layoutHook defaultConfig)
+           , layoutHook   = smartBorders $ avoidStruts (layoutHook defaultConfig)
            , focusFollowsMouse = False
            }
            `additionalKeysP`

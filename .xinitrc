@@ -34,7 +34,7 @@ xmodmap ~/.Xmodmap
 
 sh ~/.fehbg &
 compton -b &
-unclutter -idle 1 &
+unclutter -idle 10 &
 redshift -l 55.6468851:12.057381 &
 emacs --daemon &
 urxvtd &

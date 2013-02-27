@@ -64,6 +64,6 @@ URxvt.background: [50]#000000
 
 URxvt*font: xft:DejaVu Sans Mono:pixelsize=13
 
-emacs.font: xft:DejaVu Sans Mono:pixelsize=13
+emacs.font: DejaVuSansMono-10
 
 dmenu.font: xft:DejaVu Sans Mono:pixelsize=13

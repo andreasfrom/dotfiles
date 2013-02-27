@@ -14,7 +14,7 @@ Config { font = "xft:Dejavu Sans Mono:bold:size=8:antialias=true"
                     , Run Wireless "wlo1" ["-t", "<essid>: <quality>%", "-m", "2", "-L", "50", "-H", "80", "-l", "#cc0000", "-n", "#89bdff", "-h", "#73d216"] 120
                     , Run Com "zsh" ["~/bin/getvolume"] "volume" 10
                     , Run Cpu ["-t", "<total>%", "-p", "2", "-L","5","-H","50","-l", "#73d216", "-n", "#89bdff", "-h","#cc0000"] 30
-                    , Run Memory ["-t","Mem: <usedratio>% - <used>M", "-p", "2", "-m", "3", "-L", "10", "-H", "75", "-L", "100", "-H", "600", "-l", "#73d216", "-n", "#89bdff", "-h", "#cc0000"] 30
+                    , Run Memory ["-t","Mem: <usedratio>% - <used>M", "-p", "2", "-L", "10", "-H", "75", "-m", "3", "-L", "100", "-H", "600", "-l", "#73d216", "-n", "#89bdff", "-h", "#cc0000"] 30
                     , Run Com "zsh" ["~/bin/batrate"] "batrate" 30
                     , Run BatteryP ["BAT0"] ["-t", "<left>%", "-L", "25", "-H", "80", "-l", "#cc0000", "-n", "#89bdff", "-h", "#73d216"] 60
                     , Run Uptime ["-t", "Up <fc=#89bdff><days>d <hours>h <minutes>m</fc>"] 60
