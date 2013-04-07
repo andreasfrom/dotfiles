@@ -36,7 +36,7 @@ sh ~/.fehbg &
 compton -b &
 unclutter -idle 10 &
 redshift -l 55.6468851:12.057381 &
-emacs --daemon &
+dropboxd &
 urxvtd &
 
 exec xmonad

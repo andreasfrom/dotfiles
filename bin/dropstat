@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+echo "<fc=#89bdff>$(dropbox status)</fc>"
