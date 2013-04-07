@@ -5,7 +5,7 @@
 -- low/normal/high: "-l", "#cc0000", "-n", "#89bdff", "-h", "#73d216"
 
 Config { font = "xft:Dejavu Sans Mono:bold:size=8:antialias=true"
-       , bgColor = "#272822"
+       , bgColor = "#1b1d1e"
        , fgColor = "#75715e"
        , position = Top
        , lowerOnStart = False

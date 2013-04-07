@@ -5,6 +5,7 @@ import XMonad.Actions.CycleWS (toggleWS)
 import XMonad.Layout.NoBorders (smartBorders)
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks (avoidStruts)
+import XMonad.Hooks.SetWMName (setWMName)
 
 -- Config
 myTerminal = "urxvtc"
@@ -23,6 +24,7 @@ myConfig = defaultConfig
            , borderWidth  = 1
            , focusedBorderColor = "cc0000"
            , layoutHook   = smartBorders $ avoidStruts (layoutHook defaultConfig)
+           , startupHook = setWMName "LG3D"
            , focusFollowsMouse = False
            }
            `additionalKeysP`

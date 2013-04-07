@@ -13,7 +13,7 @@ else
     color="#73d216" # <7 green
 fi
 
-if [[ $(echo ${upowerdump} | grep state | awk '{print $2}') == "charging" ]]; then
+if [[ $(echo ${upowerdump} | grep state | awk '{print $2}' | head -n 1) == "charging" ]]; then
     prefix="<fc=#73d216>+</fc>"
     color="#73d216" # <7 green
 else
