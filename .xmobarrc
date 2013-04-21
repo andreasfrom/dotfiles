@@ -12,7 +12,7 @@ Config { font = "xft:Dejavu Sans Mono:bold:size=8:antialias=true"
        , hideOnStart = False
        , commands = [ Run StdinReader -- workspace and window title info from xmonad
                     , Run Wireless "wlo1" ["-t", "<essid>: <quality>%", "-m", "2", "-L", "50", "-H", "80", "-l", "#cc0000", "-n", "#89bdff", "-h", "#73d216"] 120
-                    , Run Com "zsh" ["~/bin/dropstat"] "dropbox" 10
+                    --, Run Com "dropbox" ["status"] "dropbox" 10
                     , Run Com "zsh" ["~/bin/getvolume"] "volume" 10
                     , Run Cpu ["-t", "<total>%", "-p", "2", "-L","5","-H","50","-l", "#73d216", "-n", "#89bdff", "-h","#cc0000"] 30
                     , Run Memory ["-t","Mem: <usedratio>% - <used>M", "-p", "2", "-L", "10", "-H", "75", "-m", "3", "-L", "100", "-H", "600", "-l", "#73d216", "-n", "#89bdff", "-h", "#cc0000"] 30
@@ -23,5 +23,5 @@ Config { font = "xft:Dejavu Sans Mono:bold:size=8:antialias=true"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader%}{Dropbox: %dropbox% | %wlo1wi% | Cpu: %cpu% | %memory% | Bat: %batrate%W - %battery% | Vol: %volume% | %uptime% | %date% "
+       , template = " %StdinReader%}{%wlo1wi% | Cpu: %cpu% | %memory% | Bat: %batrate%W - %battery% | Vol: %volume% | %uptime% | %date% "
        }
