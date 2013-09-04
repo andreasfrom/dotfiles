@@ -30,9 +30,9 @@ myConfig = defaultConfig
            `additionalKeysP`
            [ ("M1-<Tab>", toggleWS)  -- alt-tab workspaces
            --, ("M-e", spawn "emacsclient -c") -- easy emacsclient
-           , ("<XF86AudioMute>", spawn "pamixer --toggle-mute")
-           , ("<XF86AudioLowerVolume>", spawn "pamixer --decrease 5")
-           , ("<XF86AudioRaiseVolume>", spawn "pamixer --increase 5")
+           , ("<XF86AudioMute>", spawn "amixer sset Master toggle")
+           , ("<XF86AudioLowerVolume>", spawn "amixer sset Master 5%-")
+           , ("<XF86AudioRaiseVolume>", spawn "amixer sset Master 5%+")
            ]
 
 -- Run XMonad
